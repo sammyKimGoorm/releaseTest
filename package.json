@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "release": "standard-version",
-    "release:minor": "branch=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD | cut -d'/' -f2); npm run release -- --release-as minor && git flow release finish -Fpn ${branch} && git push --tags"
+    "release:minor": "branch=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD | cut -d'/' -f2); npm run release -- --release-as minor && git flow release finish -Fpn ${branch} && git push --tags",
+    "release:patch": "branch=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD | cut -d'/' -f2); npm run release -- --release-as patch && git flow hotfix finish -Fpn ${branch} && git push --tags"
   },
   "author": "",
   "license": "ISC",
