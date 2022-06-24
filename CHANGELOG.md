@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.4](https://github.com/sammyKimGoorm/releaseTest/compare/v1.4.3...v1.4.4) (2022-06-24)
+
+
+### Bug Fixes
+
+* hotfix2 ([5abafed](https://github.com/sammyKimGoorm/releaseTest/commit/5abafedb712eb922d6ad5f2b2e1240d3f7d80f76))
+
 ### [1.4.3](https://github.com/sammyKimGoorm/releaseTest/compare/v1.4.2...v1.4.3) (2022-06-24)
 
 
