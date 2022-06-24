@@ -1,17 +1,16 @@
 {
-  "name": "y",
-  "version": "1.4.5",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "standard-version": "standard-version",
-    "release:minor": "branch=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD | cut -d'/' -f2); npm run release -- --release-as minor && git flow release finish -Fpn ${branch} && git push --tags",
-    "release:patch": "branch=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD | cut -d'/' -f2); npm run release -- --release-as patch && git flow hotfix finish -Fpn ${branch} && git push --tags",
-    "hotfix:finish": "branch=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD | cut -d'/' -f2); git pull origin master && npm run standard-version -- --release-as patch && git flow hotfix finish -Fpn ${branch} && git push --tags"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "standard-version": "^9.5.0"
-  }
+	"name": "y",
+	"version": "1.4.5",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"standard-version": "standard-version",
+		"release:finish": "branch=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD | cut -d'/' -f2); git pull origin master && npm run standard-version -- --release-as minor && git flow release finish -Fpn ${branch} && git push --tags",
+		"hotfix:finish": "branch=$(git rev-parse --symbolic-full-name --abbrev-ref HEAD | cut -d'/' -f2); git pull origin master && npm run standard-version -- --release-as patch && git flow hotfix finish -Fpn ${branch} && git push --tags"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"standard-version": "^9.5.0"
+	}
 }
