@@ -2,7 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-<<<<<<< HEAD
+### [1.4.2](https://github.com/sammyKimGoorm/releaseTest/compare/v1.2.1...v1.4.2) (2022-06-24)
+
 ### [1.2.1](https://github.com/sammyKimGoorm/releaseTest/compare/v1.2.0...v1.2.1) (2022-06-24)
 =======
 ### [1.4.1](https://github.com/sammyKimGoorm/releaseTest/compare/v1.4.0...v1.4.1) (2022-06-23)
